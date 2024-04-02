@@ -3,7 +3,7 @@ const proxy = require('express-http-proxy');
 const app = express();
 const targetUrl = 'https://api.openai.com';
 //const openaiKey = process.env.OPENAI_KEY
-const port = 7860;
+const port = 3000;
 //const baseUrl = getExternalUrl(process.env.SPACE_ID);
 
 app.use('/api', proxy(targetUrl, {
